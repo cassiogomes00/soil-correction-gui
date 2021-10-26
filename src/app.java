@@ -1,9 +1,9 @@
 
-import view.ParentFrame;
+import view.Home;
 
 public class app {
 
   public static void main(String[] args) {
-    new ParentFrame("Test", 0);
+    new Home();
   }
 }
