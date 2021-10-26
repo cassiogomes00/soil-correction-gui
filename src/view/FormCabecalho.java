@@ -158,6 +158,7 @@ public class FormCabecalho extends ParentFrame implements ActionListener {
       case "proximo": {
         try {
           this.proximo();
+          new FormSoloAmostra(formulario);
         } catch (ParseException ex) {
           Logger.getLogger(FormCabecalho.class.getName()).log(Level.SEVERE, null, ex);
         }
