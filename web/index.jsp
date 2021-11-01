@@ -9,7 +9,7 @@
   <body>
     <h1>Correção de solos</h1>
 
-    <form>
+    <form method="post" action="handleFormSubmit.jsp">
       <h2>Informações iniciais</h2>
 
       <label for="produtor">
