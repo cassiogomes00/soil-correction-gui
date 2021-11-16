@@ -38,5 +38,5 @@
   String prnt = request.getParameter("prnt");
   String teorCaOCorretivo = request.getParameter("teor-cao-corretivo");
   
-//throw new Exception(talhao + areaTalhao + texturaSolo + sistemaCultivo + profundidadeAmostraSolos);
+
 %>
