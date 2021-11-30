@@ -1,4 +1,4 @@
-package Util.PropertyFileControl;
+package Control.PropertyFileControl;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -28,5 +28,17 @@ public class PropertyFileController {
 
     fileController.createFileIfNotExists(path);
     props.store(fileOutputStream, null);
+  }
+
+  public void mergeProperties(String path, Properties props, boolean rewrite) throws Exception {
+    fileController.createFileIfNotExists(path);
+
+    Properties savedProps = getProperties(path);
+
+    if (!rewrite) {
+      props.putAll(savedProps);
+    }
+
+    saveProperties(path, props);
   }
 }

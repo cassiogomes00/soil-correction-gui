@@ -1,4 +1,4 @@
-package Util.PropertyFileControl;
+package Control.PropertyFileControl;
 
 import java.io.File;
 import java.io.FileInputStream;

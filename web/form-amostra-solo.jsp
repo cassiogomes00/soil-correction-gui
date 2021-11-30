@@ -14,7 +14,7 @@
     <h1>Amostra/solo</h1>
     <p>Passo <%=currentStep%> de <%=totalSteps%></p>
 
-    <form>
+    <form action="handle-amostra-solo-submit.jsp">
       <div>
         <label for="talhao">Talhão</label>
         <input type="number" name="talhao" id="talhao" placeholder="ex.: 1"/>

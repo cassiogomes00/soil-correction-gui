@@ -14,7 +14,7 @@
     <h1>Nutrientes no solo</h1>
     <p>Passo <%=currentStep%> de <%=totalSteps%></p>
 
-    <form>
+    <form action="handle-nutrientes-solo-submit.jsp">
       <div>
         <label for="teor-fosforo">Teor de fósforo</label>
         <input type="number" name="teor-fosforo" id="teor-fosforo" placeholder="ex.: 4.8"/>

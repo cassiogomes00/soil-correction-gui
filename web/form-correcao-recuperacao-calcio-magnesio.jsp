@@ -14,7 +14,7 @@
     <h1>Correção/recuperação de cálcio/magnésio</h1>
     <p>Passo <%=currentStep%> de <%=totalSteps%></p>
 
-    <form>
+    <form action="handle-correcao-recuperacao-calcio-magnesio-submit.jsp">
       <div>
         <label for="participacao-calcio-desejada">Participação de cálcio desejada</label>
         <input type="number" name="participacao-calcio-desejada" id="participacao-calcio-desejada" placeholder="ex.: 4.8"/>

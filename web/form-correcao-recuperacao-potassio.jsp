@@ -14,7 +14,7 @@
     <h1>Correção/recuperação de potássio</h1>
     <p>Passo <%=currentStep%> de <%=totalSteps%></p>
 
-    <form>
+    <form action="handle-correcao-recuperacao-potassio-submit.jsp">
       <div>
         <label for="participacao-potassio-desejada">Participação de potássio desejada</label>
         <input type="number" name="participacao-potassio-desejada" id="participacao-potassio-desejada" placeholder="ex.: 4.8"/>

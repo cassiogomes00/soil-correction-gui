@@ -14,7 +14,7 @@
     <h1>Correção/recuperação de fósforo</h1>
     <p>Passo <%=currentStep%> de <%=totalSteps%></p>
 
-    <form>
+    <form action="handle-correcao-recuperacao-fosforo-submit.jsp">
       <div>
         <label for="teor-fosforo-atingir">Teor de fósforo a atingir</label>
         <input type="number" name="teor-fosforo-atingir" id="teor-fosforo-atingir" placeholder="ex.: 4.8"/>

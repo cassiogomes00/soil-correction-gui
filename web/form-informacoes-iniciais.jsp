@@ -14,7 +14,7 @@
     <h1>Informações Iniciais</h1>
     <p>Passo <%=currentStep%> de <%=totalSteps%></p>
 
-    <form>
+    <form action="handle-info-iniciais-submit.jsp">
       <div>
         <label for="produtor">Produtor</label>
         <input type="text" name="produtor" id="produtor" placeholder="ex.: João da Silva"/>
