@@ -4,7 +4,7 @@
 <%@ page import="Control.PropertyFileControl.*"%>
 
 <%
- String participaçãoPotassioDesejada = request.getParameter("participacao-potassio-desejada");
+ String participacaoPotassioDesejada = request.getParameter("participacao-potassio-desejada");
   String fontePotassioUtilizar = request.getParameter("fonte-potassio-utilizar");
   String valorFontePotassio = request.getParameter("valor-fonte-potassio");
 
@@ -12,7 +12,7 @@
   PropertyFileController propertyFileControl = new PropertyFileController();
   String path = System.getProperties().getProperty("user.home") + "/record.properties";
   
-  props.setProperty("participaçãoPotassioDesejada", participaçãoPotassioDesejada);
+  props.setProperty("participacaoPotassioDesejada", participacaoPotassioDesejada);
   props.setProperty("fontePotassioUtilizar", fontePotassioUtilizar);
   props.setProperty("valorFontePotassio", valorFontePotassio);
   

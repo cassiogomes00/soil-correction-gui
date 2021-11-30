@@ -20,7 +20,7 @@
   
   propertyFileControl.mergeProperties(path, props, false); 
 
-  out.println("pronto");
+  response.sendRedirect("result-page.jsp");
 
 
 

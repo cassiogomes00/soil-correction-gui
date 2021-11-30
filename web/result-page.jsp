@@ -1,9 +1,9 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.Properties"%>
 <%@page import="Control.PropertyFileControl.PropertyFileController"%>
-<%@page import="Util.nutrienteTextura.NutrientesCTC"%>
-<%@page import="Util.nutrienteTextura.TexturaSolo"%>
+<%@page import="Util.nutrienteTextura.*"%>
 <%@page import="Util.EquilibrioCorrecaoCTC.EquilibrioCorrecaoCTC"%>
+<%@page import="Util.conversores.*"%>
 
 <%!String path = System.getProperties().getProperty("user.home") + "/record.properties";%>
 <%!Properties props = new PropertyFileController().getProperties(path);%>
@@ -23,8 +23,9 @@
 <%!double moPercentual = new EquilibrioCorrecaoCTC().calculaMOPercentual(Double.parseDouble(props.getProperty("teorMO")));%>
 <%!double carbono = new EquilibrioCorrecaoCTC().calculaCarbono(moPercentual);%>
 
-<%!%>
-<%!%>
+<%!double teorFosforoAdicionar = new ConverteKgHaEmP2O5().converte(new ConverteMgDm3EmKgHa().converte(valorIdealFosforo - Double.parseDouble(properties.getProperty(teorFosforo))));%>
+
+<%!double necessidadeFosforo = new CorrecaoFosforo().calculaEficienciaNutriente(teorFosforoAdicionar, Double.parseDouble(props.getProperty(eficienciaFosforo)))%>
 <%!%>
 <%!%>
 <%!%>
