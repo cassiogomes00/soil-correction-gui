@@ -9,7 +9,6 @@
   <body>
     <h1>Correção de solos</h1>
 
-    <a href="form-informacoes-iniciais.jsp">Registrar nova análise</a>
-    <a>Ver análises anteriores</a>
+    <a href="form-informacoes-iniciais.jsp">Iniciar análise</a>
   </body>
 </html>
